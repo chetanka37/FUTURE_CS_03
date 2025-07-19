@@ -1,0 +1,25 @@
+# Task 3 – Secure File Sharing with Encryption
+
+🎯 Objective:
+To simulate secure file sharing by encrypting a file using symmetric encryption (GPG), verifying its integrity, and decrypting it securely.
+
+🛠️ Tools Used:
+- gpg (GNU Privacy Guard)
+- sha256sum
+- nano
+- gnome-screenshot
+- Kali Linux (non-root user)
+
+📦 Steps:
+1. Created a file `secret_plan.txt` with sensitive content
+2. Encrypted using `gpg -c` and passphrase: future@123
+3. Decrypted using `gpg` and same passphrase
+4. Verified file integrity with `sha256sum` before and after decryption
+5. Compared both hash files with `diff`
+6. Took screenshot of the verification process
+
+✅ Outcome:
+The file was securely encrypted, transmitted, decrypted, and verified. Hashes matched, confirming zero tampering. This completes secure file sharing simulation.
+
+📸 Screenshot:
+task3_encryption_demo.png
